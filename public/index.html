@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post App</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body onload="getAllPost()">
+   
+    <center>
+        <h2>Express Crud App</h2>
+    <form onsubmit="createPost(); return false">
+      <div class="post-box">
+        <input type="text" id="postTitle" placeholder="Enter your title...">
+       <textarea id="postText" placeholder="Enter your text..."></textarea>
+       <button type="submit" id="submit-button">Submit Post</button>
+      </div>
+
+      
+   </center>
+
+   <div id="container"></div>
+
+      
+
+     
+
+      <br />
+      <br />
+      <br />
+    </form>
+
+    <div id="container"></div>
+  
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.js"></script>
+
+   <script type="module" src="./app.mjs"></script>
+     
+</body>
+</html>
